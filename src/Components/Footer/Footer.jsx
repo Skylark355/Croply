@@ -9,7 +9,7 @@ import mobile from "../../assets/Croply/mobile.png";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="contact">
       <div className="footer-top">
         <div className="footer-logo">
           <h1>Croply</h1>

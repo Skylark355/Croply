@@ -128,25 +128,41 @@
     font-size: 0.8rem;
   }
 
-  .navbar-menu {
+  /* .navbar-menu {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color-green);
     border-radius: 0 1rem 1rem 0;
     position: absolute;
-    width: 250px;
+    width: fit-content;
     top: -900px;
     left: 0;
     z-index: -1111;
     transition: all 0.7s ease-in-out;
     padding: 2rem 3rem;
     height: fit-content;
+  } */
+
+  .navbar-menu {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-green);
+    border-radius: 0 1rem 1rem 0;
+    position: absolute;
+    width: fit-content;
+    top: 80px; /* Keep it visible at the top */
+    left: -300px; /* Start off-screen to the left */
+    z-index: 999;
+    transition: all 0.7s ease-in-out;
+    padding: 2rem 3rem;
+    height: 25rem;
   }
 
   .navbar-menu.active {
-    top: 100%;
+    /* top: 100%; */
     transition: all 0.7s ease-in;
     color: var(--color-white);
+    left: 0;
   }
 
   .navbar a.active {

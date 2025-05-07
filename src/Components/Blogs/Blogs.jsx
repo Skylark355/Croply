@@ -6,7 +6,7 @@ import blogImage2 from "../../assets/Croply/blogImage2.webp"
 
 const Blogs = () => {
   return (
-    <div className="blogs">
+    <div className="blogs" id="blog">
       <h1>Blogs</h1>
 
       <div className="blogs-cards">
