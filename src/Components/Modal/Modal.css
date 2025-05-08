@@ -1,0 +1,153 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sign {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-as-a-farmer {
+  padding: 4.5rem;
+  border-radius: 0.5rem;
+  border: 1px thick black;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.signup-as-a-farmer:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  outline: none;
+  border: none;
+}
+
+.signup-as-a-buyer {
+  padding: 4.5rem;
+  border-radius: 0.5rem;
+  border: 1px thick black;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.signup-as-a-buyer:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  outline: none;
+  border: none;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .modal-container {
+    padding: 1rem;
+    max-width: 350px;
+    width: 90%;
+    margin-top: 7rem;
+  }
+
+  .sign {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .signup-as-a-farmer {
+    padding: 3rem;
+    font-size: 1rem;
+  }
+
+  .signup-as-a-buyer {
+    padding: 3rem;
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .modal-container {
+    padding: 1rem;
+    max-width: 350px;
+    width: 90%;
+    margin-top: 7rem;
+  }
+
+  .sign {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .signup-as-a-farmer {
+    padding: 3rem;
+    font-size: 1rem;
+  }
+
+  .signup-as-a-buyer {
+    padding: 3rem;
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .modal-container {
+    margin-top: 8rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .modal-container {
+    margin-top: 8rem;
+  }
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .modal-container {
+    margin-top: 8rem;
+  }
+}

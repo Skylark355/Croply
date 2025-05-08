@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
-const Navbar = () => {
+
+const Navbar = ({ onOpenModal }) => {
+  
+
+
+
   const [menu, setMenu] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -117,8 +122,9 @@ const Navbar = () => {
           )}
         </div>
 
-        <button className="sign-up">Sign up</button>
+        <button className="sign-up" onClick={onOpenModal}>Sign up</button>
       </div>
+
     </div>
   );
 };

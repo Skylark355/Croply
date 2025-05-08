@@ -249,8 +249,8 @@
   }
 
   .first-card-top-left {
-    height: 11rem;
-    width: 11rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 0;
   }
 
@@ -265,19 +265,21 @@
   /* Overlay that appears on hover */
   .card-overlay {
     border-radius: 0;
-    padding: 1rem;
+    padding: 0.7rem;
   }
 
   /* h4 inside overlay */
   .card-overlay h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     width: 100%;
+    margin-bottom: 0.3rem;
   }
 
   /* Subtext paragraph */
   .card-overlay .subtext {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    width: 100%;
   }
 
   .aboutImage {
