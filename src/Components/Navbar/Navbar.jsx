@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 
 const Navbar = ({ onOpenModal }) => {
@@ -44,11 +45,14 @@ const Navbar = ({ onOpenModal }) => {
         {isOpen ? <FaTimes /> : <FaBars />} {/* Change icon dynamically */}
       </div>
 
-      <div className="logo">
+      
+
+      <Link className="logo" to="/">
         <h1>Croply</h1>
-      </div>
+      </Link>
 
       <ul className={isOpen ? "navbar-menu active open" : "navbar-menu"}>
+        <Link to="/">
         <a
           href="#home"
           onClick={() => {
@@ -59,6 +63,7 @@ const Navbar = ({ onOpenModal }) => {
         >
           Home
         </a>
+        </Link>
 
         <a
           href="#about"

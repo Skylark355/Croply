@@ -1,0 +1,58 @@
+.learnMore{
+    margin-top: 4rem;
+    scroll-margin-top: 100px;
+    /* background-color: red; */
+    font-family: "Inter", sans-serif;
+}
+
+.learnMore-container{
+    padding: 3rem;
+
+}
+
+.learnMore span{
+    font-size: 1rem;
+    
+}
+
+.learnMore h1{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.learnMore h2{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.learnMore p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.learnMore li{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 2rem;
+}
+
+.learnMore-works p{
+    font-size: 1rem;
+}
+
+.learnMore-benefit p{
+    font-size: 1rem;
+}
+
+.learnMore-benefit li{
+    margin-left: 0.5rem;
+}
+
+.learnMore-relevance p{
+    font-size: 1rem;
+}
+
+.learnMore-relevance li{
+    margin-left: 0.5rem;
+}

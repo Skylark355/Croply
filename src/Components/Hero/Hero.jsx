@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="hero" id="home">
       <h1>Croply</h1>
@@ -14,7 +17,14 @@ const Hero = () => {
         produce or a buyer seeking quality crops, Croply is your one-stop
         solution for smarter farming and seamless trading.
       </p>
-      <button className="general-button">Learn More</button>
+      <button
+        className="general-button"
+        onClick={() => {
+          navigate("/learn-more");
+        }}
+      >
+        Learn More
+      </button>
     </div>
   );
 };
