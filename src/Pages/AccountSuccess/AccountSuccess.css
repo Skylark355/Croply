@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
-  height: 100vh;
+   scroll-margin-top: 100px;
+  /* height: 100vh; */
 }
 
 .accountSuccess h1 {
