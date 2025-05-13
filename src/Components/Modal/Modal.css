@@ -79,7 +79,7 @@
     padding: 1rem;
     max-width: 350px;
     width: 90%;
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
 
   .sign {
@@ -107,7 +107,7 @@
     padding: 1rem;
     max-width: 350px;
     width: 90%;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .sign {
@@ -131,7 +131,7 @@
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .modal-container {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 }
 
@@ -140,7 +140,7 @@
 */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .modal-container {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 }
 
@@ -149,6 +149,6 @@
 */
 @media (min-width: 1281px) {
   .modal-container {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 }

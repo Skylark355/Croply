@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ onOpenModal }) => {
-  
-
-
-
   const [menu, setMenu] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -38,6 +33,8 @@ const Navbar = ({ onOpenModal }) => {
     setIsOpen(false);
   };
 
+  
+
   return (
     <div className="navbar">
       {/* Hamburger Icon */}
@@ -45,31 +42,29 @@ const Navbar = ({ onOpenModal }) => {
         {isOpen ? <FaTimes /> : <FaBars />} {/* Change icon dynamically */}
       </div>
 
-      
-
       <Link className="logo" to="/">
         <h1>Croply</h1>
       </Link>
 
       <ul className={isOpen ? "navbar-menu active open" : "navbar-menu"}>
         <Link to="/">
-        <a
-          href="#home"
-          onClick={() => {
-            setMenu("home");
-            closeMenu();
-          }}
-          className={menu === "home" ? "active" : ""}
-        >
-          Home
-        </a>
+          <a
+            href="#home"
+            onClick={() => {
+              setMenu("home");
+              closeMenu();
+            }}
+            className={menu === "home" ? "active" : ""}
+          >
+            Home
+          </a>
         </Link>
 
         <a
           href="#about"
           onClick={() => {
             setMenu("about");
-            closeMenu()
+            closeMenu();
           }}
           className={menu === "about" ? "active" : ""}
         >
@@ -80,7 +75,7 @@ const Navbar = ({ onOpenModal }) => {
           href="#marketplace"
           onClick={() => {
             setMenu("marketplace");
-            closeMenu()
+            closeMenu();
           }}
           className={menu === "marketplace" ? "active" : ""}
         >
@@ -91,7 +86,7 @@ const Navbar = ({ onOpenModal }) => {
           href="#blog"
           onClick={() => {
             setMenu("blog");
-            closeMenu()
+            closeMenu();
           }}
           className={menu === "blog" ? "active" : ""}
         >
@@ -102,7 +97,7 @@ const Navbar = ({ onOpenModal }) => {
           href="#contact"
           onClick={() => {
             setMenu("contact");
-            closeMenu()
+            closeMenu();
           }}
           className={menu === "contact" ? "active" : ""}
         >
@@ -127,9 +122,10 @@ const Navbar = ({ onOpenModal }) => {
           )}
         </div>
 
-        <button className="sign-up" onClick={onOpenModal}>Sign up</button>
+        <button className="sign-up" onClick={onOpenModal}>
+          Sign up
+        </button>
       </div>
-
     </div>
   );
 };
