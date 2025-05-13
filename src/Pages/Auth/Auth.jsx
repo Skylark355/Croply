@@ -3,6 +3,7 @@ import "./Auth.css";
 import google from "../../assets/Croply/google.png";
 import facebook from "../../assets/Croply/facebookLogo.png";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // 👈 Eye icons
+import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -36,6 +37,8 @@ const Auth = () => {
       setError("");
     }
   };
+
+  const navigate = useNavigate();
 
   return (
     <div className="auth-container">
@@ -140,7 +143,15 @@ const Auth = () => {
                 <p style={{ color: "red", fontSize: "0.8rem" }}>{error}</p>
               )}
               <br />
-              <button type="submit" disabled={!!error} className="submit">
+
+              <button
+                type="submit"
+                disabled={!!error}
+                className="submit"
+                onClick={() => {
+                  navigate("/verify");
+                }}
+              >
                 Create an Account
               </button>
             </form>
