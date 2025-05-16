@@ -1,0 +1,39 @@
+.dashboard-main-content {
+  padding: 2rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboard-main-content p {
+  font-size: 1rem;
+}
+
+.dashboard-main-content-top-left {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.dashboard-main-content-top-left h2 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.dashboard-main-content-top-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  text-align: left;
+}
+
+.dashboard-main-content-top-right img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-bottom: 0.5rem;
+}

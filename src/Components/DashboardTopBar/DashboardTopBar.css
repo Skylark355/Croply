@@ -1,0 +1,30 @@
+.dashboard-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1111;
+  background-color: var(--color-white);
+  padding: 1.5rem 2.7rem;
+  border-bottom: 2px solid var(--color-green);
+}
+
+.dashboard-top-bar h1{
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 0;
+    color: var(--color-green);
+  font-family: "Italiana", sans-serif;
+}
+
+.dashboard-top-bar .user{
+    background-color: var(--color-green);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
