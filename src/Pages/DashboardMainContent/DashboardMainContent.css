@@ -1,5 +1,13 @@
 .dashboard-main-content {
   padding: 2rem;
+  /* display: inline-flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  width: 100%;
+  /* background-color: yellow; */
+}
+
+.top{
   display: inline-flex;
   justify-content: space-between;
   align-items: center;

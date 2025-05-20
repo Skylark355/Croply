@@ -7,8 +7,7 @@ import listing from "../../assets/Croply/listing.png";
 import market from "../../assets/Croply/marketPrice.png";
 import resource from "../../assets/Croply/resources.png";
 import community from "../../assets/Croply/community.png";
-import signout from "../../assets/Croply/signout.png"
-
+import signout from "../../assets/Croply/signout.png";
 
 const DashboardSidebar = () => {
   const [menu, setMenu] = useState("home");
@@ -26,6 +25,8 @@ const DashboardSidebar = () => {
     setIsOpen(false);
   };
 
+  const navigate = useNavigate();
+
   return (
     <div className="dashboard-sidebar">
       <ul className={isOpen ? "sidebar active open" : "sidebar"}>
@@ -34,6 +35,7 @@ const DashboardSidebar = () => {
           onClick={() => {
             setMenu("home");
             closeMenu();
+            navigate("/dashboard-home");
           }}
           className={menu === "home" ? "active" : ""}
         >
@@ -46,6 +48,7 @@ const DashboardSidebar = () => {
           onClick={() => {
             setMenu("listings");
             closeMenu();
+            navigate("/dashboard-listings");
           }}
           className={menu === "listings" ? "active" : ""}
         >
@@ -58,6 +61,7 @@ const DashboardSidebar = () => {
           onClick={() => {
             setMenu("market");
             closeMenu();
+            navigate("/dashboard-market-place");
           }}
           className={menu === "market" ? "active" : ""}
         >
@@ -70,6 +74,7 @@ const DashboardSidebar = () => {
           onClick={() => {
             setMenu("resources");
             closeMenu();
+            navigate("/dashboard-resources");
           }}
           className={menu === "resources" ? "active" : ""}
         >
@@ -82,6 +87,7 @@ const DashboardSidebar = () => {
           onClick={() => {
             setMenu("community");
             // closeMenu();
+            navigate("/dashboard-community");
           }}
           className={menu === "community" ? "active" : ""}
         >
@@ -89,7 +95,7 @@ const DashboardSidebar = () => {
           Community
         </a>
 
-         <a
+        <a
           href=""
           onClick={() => {
             setMenu("community");
