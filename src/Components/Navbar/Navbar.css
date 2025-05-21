@@ -49,7 +49,7 @@
 
 .lang-selector {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .lang-btn {

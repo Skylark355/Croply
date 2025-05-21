@@ -12,6 +12,7 @@ import DashboardNavs from "./Components/DashboardNavs/DashboardNavs";
 import DashboadMarketPlace from "./Pages/DashboardMarketplace/DashboadMarketPlace";
 import DashboardCommunity from "./Pages/DashboardCommunity/DashboardCommunity";
 import DashboardResources from "./Pages/DashboardResources/DashboardResources";
+import AgroInputs from "./Pages/AgroInputs/AgroInputs";
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
 
         {/* admin dashboard */}
         <Route element={<DashboardNavs />}>
-          <Route path="/dashboard-home" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard-listings" element={<DashboardList />} />
           <Route
             path="/dashboard-market-place"
@@ -33,6 +34,7 @@ const App = () => {
           />
           <Route path="/dashboard-resources" element={<DashboardResources />} />
           <Route path="/dashboard-community" element={<DashboardCommunity />} />
+          <Route path="/agro-inputs" element={<AgroInputs />}/>
         </Route>
 
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}

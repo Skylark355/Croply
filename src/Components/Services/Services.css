@@ -1,0 +1,40 @@
+.services {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 1.5rem;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.title {
+  text-align: left;
+  /* display: none; */
+}
+
+.service-cards {
+  height: 30rem;
+  width: 100%;
+  border-radius: 0.6rem;
+  text-align: center;
+  color: white;
+  padding-bottom: 2rem;
+  background-color: var(--color-drak-green);
+}
+
+.service-cards img {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 0.6rem;
+  object-fit: cover;
+}
+
+.service-cards h3 {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+.service-cards span {
+  font-size: 0.9rem;
+}

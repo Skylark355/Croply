@@ -35,7 +35,7 @@ const DashboardSidebar = () => {
           onClick={() => {
             setMenu("home");
             closeMenu();
-            navigate("/dashboard-home");
+            navigate("/dashboard");
           }}
           className={menu === "home" ? "active" : ""}
         >

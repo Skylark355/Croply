@@ -3,6 +3,7 @@ import "./DashboardMainContent.css";
 import croplyAI from "../../assets/Croply/croplyAI.png";
 import ContentCard from "../../Components/ContentCard/ContentCard";
 import DashboardSidebar from "../../Components/DashboardSidebar/DashboardSidebar";
+import Services from "../../Components/Services/Services";
 
 const DashboardMainContent = () => {
   return (
@@ -21,6 +22,8 @@ const DashboardMainContent = () => {
       </div>
       </div>
       <ContentCard />
+      <Services />
+      {/* <Services /> */}
     </div>
   );
 };
